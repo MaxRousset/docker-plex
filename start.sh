@@ -3,7 +3,8 @@
 # Plex Init Script
 #
 mkdir /config/Plex\ Media\ Server
-cp -f /Preferences.xml /config/Plex\ Media\ Server/Preferences.xml
+cp /Preferences.xml /config/Plex\ Media\ Server/Preferences.xml
+rm /config/Plex\ Media\ Server/plexmediaserver.pid
 
 # Plex ENV VAR
 export LD_LIBRARY_PATH=/opt/plexmediaserver
